@@ -12,6 +12,9 @@
      margin: 0;
      padding: 0;
  }
+ html,body{
+  height: 100%;
+ }
 .item{
   padding-left:20px;
   padding-right:20px;
@@ -21,6 +24,7 @@
   margin-bottom: 7px;
 
 }
+
 .experiences-section:nth-of-type(2) .item:nth-child(odd) {
   background-color: #43e09b;
 }
@@ -59,6 +63,7 @@
 }
 #looney{
   min-height: 100vh;
+  page-break-before: always;
   font-family: Gaegu;
   text-align: center;
   padding-top: 40vh;
@@ -69,11 +74,30 @@
   text-align: center;
   padding-top: 40vh;
 }
+#pollCard{
+  height: 50vh;
+}
+#userCard{
+  width: 45%;
+  /*height:350px;*/
+}
+.card-header{
+  height: 1
+  0%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Indie Flower;
+
+}
+/*#card-body{
+  background-color: #8876ed;
+}*/
 #polls{
   min-height:100vh;
   margin-left: 5%;
   margin-right: 5%;
-  padding-top: 5%;
+  /*padding-top: 0;*/
 }
 #groupPics{
   min-height:100vh;

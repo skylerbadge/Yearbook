@@ -298,7 +298,7 @@ def yearbook(request):
             for (person,count) in p.votes.iteritems():
                 Person=""
                 if(User.objects.filter(username=person).exists()):
-                    Person=User.objects.filter(username=person)[0].student.name
+                    Person=User.objects.filter(username=person)[0].student
                 tmpVotes.append([count,Person])
             tmpVotes.sort()
             ind = min(5,len(tmpVotes))
@@ -310,10 +310,10 @@ def yearbook(request):
             for (person,count) in p.votes.iteritems():
                 Person=""
                 if(User.objects.filter(username=person).exists()):
-                    Person=User.objects.filter(username=person)[0].student.name
+                    Person=User.objects.filter(username=person)[0].student
                 tmpVotes.append([count,Person])
             tmpVotes.sort()
-            ind = min(5,len(tmpVotes))
+            ind = min(4,len(tmpVotes))
             if ind!=0:
                 dep_polls.append([p.poll,tmpVotes[0:ind]])
 
